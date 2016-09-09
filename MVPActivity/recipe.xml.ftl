@@ -2,30 +2,28 @@
 <recipe>
     <#include "../common/recipe_manifest.xml.ftl" />
 
-    <#include "activity_layout_recipe.xml.ftl" />
+<#if generateLayout>
+    <#include "../common/recipe_simple.xml.ftl" />
+    <open file="${escapeXmlAttribute(resOut)}/layout/${layoutName}.xml" />
+</#if>
 
-    <instantiate from="src/app_package/classes/Activity.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/view/impl/${activityClass}.java" />
+    <instantiate from="root/src/app_package/Activity.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/${activityClass}.java" />
 
-    <instantiate from="src/app_package/classes/View.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/view/${viewClass}.java" />
+    <open file="${escapeXmlAttribute(srcOut)}/${activityClass}.java" />
 
-    <instantiate from="src/app_package/classes/Component.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/injection/${componentClass}.java" />
+ <#if generateView>
+    <instantiate from="root/src/app_package/View.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/${viewName}.java" />
 
-    <instantiate from="src/app_package/classes/Module.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/injection/${moduleClass}.java" />
+    <open file="${escapeXmlAttribute(srcOut)}/${viewName}.java" />
+ </#if>
 
-    <instantiate from="src/app_package/classes/PresenterImpl.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/presenter/impl/${presenterClass}Impl.java" />
+  <#if generatePresenter>
+    <instantiate from="root/src/app_package/Presenter.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/${presenterName}.java" />
 
-    <instantiate from="src/app_package/classes/Presenter.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/presenter/${presenterClass}.java" />
-
-    <instantiate from="src/app_package/classes/InteractorImpl.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/interactor/impl/${interactorClass}Impl.java" />
-
-    <instantiate from="src/app_package/classes/Interactor.java.ftl"
-      to="${escapeXmlAttribute(srcOut)}/interactor/${interactorClass}.java" />
+    <open file="${escapeXmlAttribute(srcOut)}/${presenterName}.java" />
+ </#if>
 
 </recipe>

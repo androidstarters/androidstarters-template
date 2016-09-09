@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template
-    format="2"
-    revision="2"
+    format="5"
+    revision="1"
     name="MVP Fragment"
     minApi="7"
     minBuildApi="14"
@@ -11,74 +11,69 @@
     <formfactor value="Mobile" />
 
     <parameter
-        id="activityClass"
+        id="className"
         name="Fragment Name"
         type="string"
-        constraints="class|unique|nonempty"
-        default="CustomFragment"
+        constraints="class|nonempty|unique"
+        default="MvpFragment"
         help="The name of the fragment class to create" />
 
     <parameter
-        id="layoutName"
-        name="Layout Name"
-        type="string"
-        constraints="layout|unique|nonempty"
-        suggest="fragment_${classToResource(activityClass)}"
-        default="fragment_custom"
-        help="The name of the layout to create for the fragment" />
+        id="includeLayout"
+        name="Create layout XML"
+        type="boolean"
+        default="true"
+        help="Generate a layout XML for the fragment" />
 
     <parameter
-        id="packageName"
-        name="Package name"
-        type="string"
-        constraints="package"
-        default="com.mycompany.myapp" />
+        id="generateView"
+        name="Generate View"
+        type="boolean"
+        default="true"
+        help="If true, a View interface will be generated" />
+
+   <parameter
+        id="generatePresenter"
+        name="Generate Presenter"
+        type="boolean"
+        default="true"
+        help="If true, a Presenter interface will be generated" />
 
     <parameter
-        id="viewClass"
+        id="fragmentName"
+        name="Fragment Layout Name"
+        type="string"
+        constraints="layout|nonempty|unique"
+        default="fragment_blank"
+        visibility="includeLayout"
+        suggest="fragment_${classToResource(className)}"
+        help="The name of the layout to create" />
+
+    <parameter
+        id="viewName"
         name="View Name"
         type="string"
         constraints="class|nonempty|unique"
         default="MainView"
-        suggest="${underscoreToCamelCase(classToResource(activityClass))}View"
-        help="The name of the View to create" />
+        visibility="generateView"
+        suggest="${underscoreToCamelCase(classToResource(className))}View"
+        help="The name of the View interface to create" />
 
     <parameter
-        id="presenterClass"
+        id="presenterName"
         name="Presenter Name"
         type="string"
         constraints="class|nonempty|unique"
         default="MainPresenter"
-        suggest="${underscoreToCamelCase(classToResource(activityClass))}Presenter"
-        help="The name of the Presenter to create" />
+        visibility="generatePresenter"
+        suggest="${underscoreToCamelCase(classToResource(className))}Presenter"
+        help="The name of the Presenter interface to create" />
 
-    <parameter
-        id="interactorClass"
-        name="Interactor Name"
-        type="string"
-        constraints="class|nonempty|unique"
-        default="MainInteractor"
-        suggest="${underscoreToCamelCase(classToResource(activityClass))}Interactor"
-        help="The name of the Interactor to create" />     
+    <thumbs>
+        <thumb>template_mvp_fragment.png</thumb>
+    </thumbs>
 
-    <parameter
-        id="componentClass"
-        name="Component Name"
-        type="string"
-        constraints="class|nonempty|unique"
-        default="MainComponent"
-        suggest="${underscoreToCamelCase(viewClass)}Component"
-        help="The name of the Component to create" />
-
-    <parameter
-        id="moduleClass"
-        name="Module Name"
-        type="string"
-        constraints="class|nonempty|unique"
-        default="MainModule"
-        suggest="${underscoreToCamelCase(viewClass)}Module"
-        help="The name of the Module to create" />         
-
+    <globals file="globals.xml.ftl" />
     <execute file="recipe.xml.ftl" />
 
-</template>  
+</template>
