@@ -1,6 +1,6 @@
 # Android Studio MVP Starter Template
 
-This is an Android Studio template for MVP. 
+This is an Android Studio template for MVP.
 
 ## License
 

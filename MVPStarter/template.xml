@@ -2,12 +2,12 @@
 <template
     format="2"
     revision="2"
-    name="MVP Boilerplate"
+    name="MVP Starter"
     minApi="7"
     minBuildApi="14"
     description="Creates a hierarchy for MVP with base classes">
 
-    <category value="MVP" />
+    <category value="Activity" />
     <formfactor value="Mobile" />
 
     <parameter
@@ -26,6 +26,10 @@
         constraints="package"
         default="com.mycompany.myapp" />
 
+    <thumbs>
+        <thumb>template_mvp_activity.png</thumb>
+    </thumbs>
+
     <execute file="recipe.xml.ftl" />
 
-</template>  
+</template>

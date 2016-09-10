@@ -1,0 +1,22 @@
+{
+  "name": "mvpstarter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sync_template.js",
+  "dependencies": {
+    "fs-finder": "^1.8.1",
+    "mkdirp": "^0.5.1",
+    "mv": "^2.1.1",
+    "ncp": "^2.0.0",
+    "nodegit": "^0.14.1",
+    "path": "^0.12.7",
+    "replace": "^0.3.0",
+    "rimraf": "^2.5.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
