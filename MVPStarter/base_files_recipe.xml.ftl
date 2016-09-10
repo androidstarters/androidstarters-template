@@ -67,7 +67,7 @@
     from="app/src/main/java/in/mvpstarter/sample/injection/component/FragmentComponent.java.ftl"
     to="${escapeXmlAttribute(srcOut)}/injection/FragmentComponent.java" />
 
-    <instantiate
+  <instantiate
     from="app/src/main/java/in/mvpstarter/sample/injection/module/ActivityModule.java.ftl"
     to="${escapeXmlAttribute(srcOut)}/injection/ActivityModule.java" />
 
@@ -78,5 +78,77 @@
   <instantiate
     from="app/src/main/java/in/mvpstarter/sample/injection/module/FragmentModule.java.ftl"
     to="${escapeXmlAttribute(srcOut)}/injection/FragmentModule.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/util/DialogFactory.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/util/DialogFactory.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/util/NetworkUtil.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/util/NetworkUtil.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/util/ViewUtil.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/util/ViewUtil.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/base/BaseActivity.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/base/BaseActivity.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/base/BaseFragment.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/base/BaseFragment.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/base/BasePresenter.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/base/BasePresenter.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/base/MvpView.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/base/MvpView.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/base/Presenter.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/base/Presenter.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/main/MainActivity.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/main/MainActivity.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/main/MainMvpView.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/main/MainMvpView.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/main/MainPresenter.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/main/MainPresenter.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/main/PokemonAdapter.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/main/PokemonAdapter.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/common/ErrorView.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/common/ErrorView.java" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/detail/DetailActivity.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/detail/DetailActivity.java.ftl" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/detail/DetailMvpView.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/detail/DetailMvpView.java.ftl" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/detail/DetailPresenter.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/detail/DetailPresenter.java.ftl" />
+
+  <instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/detail/MapsSampleActivity.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/detail/MapsSampleActivity.java.ftl" />
+
+<instantiate
+    from="app/src/main/java/in/mvpstarter/sample/ui/detail/widget/StatisticView.java.ftl"
+    to="${escapeXmlAttribute(srcOut)}/ui/detail/widget/StatisticView.java" />
 
 </recipe>
