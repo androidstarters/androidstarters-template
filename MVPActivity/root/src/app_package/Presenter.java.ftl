@@ -1,7 +1,7 @@
 package ${packageName};
 
 import ${applicationPackage}.ui.base.BasePresenter;
-import ${applicationPackage}.injection.annotation.ConfigPersistent;
+import ${applicationPackage}.injection.ConfigPersistent;
 import javax.inject.Inject;
 
 @ConfigPersistent

@@ -10,20 +10,24 @@ import butterknife.ButterKnife;
 public class ${activityClass} extends BaseActivity <#if generateView>implements ${viewName}</#if>{
 <#if generatePresenter>
     @Inject
-    private ${presenterName} presenter;
+    public ${presenterName} presenter;
 </#if>
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivityComponent().inject(this);
-<#if generateLayout>
-        setContentView(R.layout.${layoutName});
+        activityComponent().inject(this);
         ButterKnife.bind(this);
-</#if>
 <#if generatePresenter>
     presenter.attachView(this);
 </#if>
     }
+
+<#if generateLayout>
+@Override
+public int getLayout() {
+    return R.layout.${layoutName};
+}
+</#if>
 
 <#if generatePresenter>
     @Override
