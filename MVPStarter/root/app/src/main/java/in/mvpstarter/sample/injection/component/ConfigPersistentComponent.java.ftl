@@ -4,8 +4,8 @@ import dagger.Component;
 import ${packageName}.injection.ConfigPersistent;
 import ${packageName}.injection.module.ActivityModule;
 import ${packageName}.injection.module.FragmentModule;
-import ${packageName}.ui.base.BaseActivity;
-import ${packageName}.ui.base.BaseFragment;
+import ${packageName}.features.base.BaseActivity;
+import ${packageName}.features.base.BaseFragment;
 
 /**
  * A dagger component that will live during the lifecycle of an Activity or Fragment but it won't

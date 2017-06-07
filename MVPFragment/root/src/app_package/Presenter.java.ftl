@@ -1,6 +1,6 @@
 package ${packageName};
 
-import ${applicationPackage}.ui.base.BasePresenter;
+import ${applicationPackage}.features.base.BasePresenter;
 import ${applicationPackage}.injection.annotation.ConfigPersistent;
 import javax.inject.Inject;
 

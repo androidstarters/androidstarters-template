@@ -56,7 +56,7 @@
         constraints="class|nonempty|unique"
         default="MainView"
         visibility="generateView"
-        suggest="${underscoreToCamelCase(classToResource(className))}View"
+        suggest="${underscoreToCamelCase(classToResource(className))}Screen"
         help="The name of the View interface to create" />
 
     <parameter

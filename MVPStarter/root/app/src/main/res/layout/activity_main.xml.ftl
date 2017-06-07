@@ -30,7 +30,7 @@
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <${packageName}.ui.common.ErrorView
+    <${packageName}.features.common.ErrorView
         android:id="@+id/view_error"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

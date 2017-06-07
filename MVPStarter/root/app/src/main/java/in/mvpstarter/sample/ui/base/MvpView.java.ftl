@@ -1,4 +1,4 @@
-package ${packageName}.ui.base;
+package ${packageName}.features.base;
 
 
 /**

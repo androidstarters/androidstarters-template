@@ -1,4 +1,4 @@
-package ${packageName}.ui.detail.widget;
+package ${packageName}.features.detail.widget;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;

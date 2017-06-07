@@ -1,4 +1,4 @@
-package ${packageName}.ui.main;
+package ${packageName}.features.main;
 
 
 import java.util.List;
@@ -7,7 +7,7 @@ import javax.inject.Inject;
 
 import ${packageName}.data.DataManager;
 import ${packageName}.injection.ConfigPersistent;
-import ${packageName}.ui.base.BasePresenter;
+import ${packageName}.features.base.BasePresenter;
 import rx.SingleSubscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;

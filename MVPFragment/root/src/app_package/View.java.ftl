@@ -1,6 +1,6 @@
 package ${packageName};
 
-import ${applicationPackage}.ui.base.MvpView;
+import ${applicationPackage}.features.base.MvpView;
 
 public interface ${viewName} extends MvpView {
 }

@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".features.main.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -29,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.detail.DetailActivity"
+            android:name=".features.detail.DetailActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <!--
@@ -45,7 +45,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".ui.detail.MapsSampleActivity"
+            android:name=".features.detail.MapsSampleActivity"
             android:label="@string/title_activity_maps_sample" />
     </application>
 

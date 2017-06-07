@@ -14,7 +14,7 @@ import ${packageName}.common.TestComponentRule;
 import ${packageName}.common.TestDataFactory;
 import ${packageName}.data.model.Pokemon;
 import ${packageName}.data.model.Statistic;
-import ${packageName}.ui.detail.DetailActivity;
+import ${packageName}.features.detail.DetailActivity;
 import ${packageName}.util.ErrorTestUtil;
 import rx.Single;
 

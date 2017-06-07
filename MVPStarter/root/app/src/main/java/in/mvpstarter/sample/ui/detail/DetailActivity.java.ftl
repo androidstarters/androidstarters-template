@@ -1,4 +1,4 @@
-package ${packageName}.ui.detail;
+package ${packageName}.features.detail;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,9 +19,9 @@ import butterknife.ButterKnife;
 import ${packageName}.R;
 import ${packageName}.data.model.Pokemon;
 import ${packageName}.data.model.Statistic;
-import ${packageName}.ui.base.BaseActivity;
-import ${packageName}.ui.common.ErrorView;
-import ${packageName}.ui.detail.widget.StatisticView;
+import ${packageName}.features.base.BaseActivity;
+import ${packageName}.features.common.ErrorView;
+import ${packageName}.features.detail.widget.StatisticView;
 
 public class DetailActivity extends BaseActivity implements DetailMvpView, ErrorView.ErrorListener {
 

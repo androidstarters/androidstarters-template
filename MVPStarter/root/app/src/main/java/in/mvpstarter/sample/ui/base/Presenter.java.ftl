@@ -1,4 +1,4 @@
-package ${packageName}.ui.base;
+package ${packageName}.features.base;
 
 /**
  * Every presenter in the app must either implement this interface or extend BasePresenter

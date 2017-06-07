@@ -1,4 +1,4 @@
-package ${packageName}.ui.common;
+package ${packageName}.features.common;
 
 import android.annotation.TargetApi;
 import android.content.Context;

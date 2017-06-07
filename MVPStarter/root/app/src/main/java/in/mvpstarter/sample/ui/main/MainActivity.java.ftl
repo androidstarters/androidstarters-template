@@ -1,4 +1,4 @@
-package ${packageName}.ui.main;
+package ${packageName}.features.main;
 
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -15,9 +15,9 @@ import javax.inject.Inject;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import ${packageName}.R;
-import ${packageName}.ui.base.BaseActivity;
-import ${packageName}.ui.common.ErrorView;
-import ${packageName}.ui.detail.DetailActivity;
+import ${packageName}.features.base.BaseActivity;
+import ${packageName}.features.common.ErrorView;
+import ${packageName}.features.detail.DetailActivity;
 
 public class MainActivity extends BaseActivity implements MainMvpView, PokemonAdapter.ClickListener,
         ErrorView.ErrorListener {

@@ -1,8 +1,8 @@
-package ${packageName}.ui.main;
+package ${packageName}.features.main;
 
 import java.util.List;
 
-import ${packageName}.ui.base.MvpView;
+import ${packageName}.features.base.MvpView;
 
 public interface MainMvpView extends MvpView {
 

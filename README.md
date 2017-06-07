@@ -2,6 +2,27 @@
 
 This is an Android Studio template for MVP.
 
+
+## Installation
+
+#### For Mac:
+
+- If you have a standard Android Studio installation:
+
+Just run the install script at the root of this repository:
+
+```
+./install.sh
+```
+
+- Manual installation:
+
+Just copy all 3 directories `MVPFragment`, `MVPActivity` and `MVPStarter` to `$ANDROID_STUDIO_FOLDER$/Contents/plugins/android/lib/templates/activities/`
+
+#### For Windows:
+
+Just copy all 3 directories `MVPFragment`, `MVPActivity` and `MVPStarter` to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\activities\`
+
 ## License
 
     Copyright 2016 Ravindra Kumar

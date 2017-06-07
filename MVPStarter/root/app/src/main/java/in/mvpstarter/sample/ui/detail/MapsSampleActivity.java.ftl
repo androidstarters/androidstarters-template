@@ -1,4 +1,4 @@
-package ${packageName}.ui.detail;
+package ${packageName}.features.detail;
 
 import android.os.Bundle;
 
@@ -10,7 +10,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import ${packageName}.R;
-import ${packageName}.ui.base.BaseActivity;
+import ${packageName}.features.base.BaseActivity;
 
 public class MapsSampleActivity extends BaseActivity implements OnMapReadyCallback {
 
